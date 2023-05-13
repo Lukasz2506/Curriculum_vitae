@@ -1,0 +1,253 @@
+body {
+    background-color: white;
+    color: #394867;
+    font-family: 'Ysabeau', sans-serif;
+    font-style: italic;
+    font-size: 1em;  
+}
+
+.container-title {
+    display: flex;
+    gap: 5%;
+    justify-content: space-around;
+    margin: 10rem 0; 
+}
+
+#me {
+    text-align: left;
+    margin-top: 5rem;
+    margin-right: 5rem;;
+}
+
+h1 {
+    color: #212A3E;
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+h2 {
+    color: #9BA4B5;
+    font-size: 2rem;
+}
+
+#avatar {
+    padding-top: 3%;
+    margin-left: 3%;
+}
+
+#avatar > img {
+    border: 10px solid #c4c9d2;
+    border-radius: 10px;
+}
+
+section[title="Abilities"] > h2 {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+section[title="p_and_c"] > h2 {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+section[title="hobbies"] > h2 {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.author  {
+    color: #212A3E;
+    display: inline-block;
+    font-size: small;
+    text-decoration: none;
+    margin-top: 5px;
+    padding-bottom: 1rem;; 
+}
+.author:hover {
+    color: #B71375;
+    font-weight: bold;
+}
+
+.abilities-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    margin: 3%;
+}
+.abilities-container > * {
+    background-color: #F1F6F9;
+    text-align: center;
+    border-radius: 10%;
+    flex-basis: 80%;
+}
+.abilities-container > * > ul {
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+h3, th {
+    font-weight: bold;
+    color: #212A3E;
+    padding-top: 10px;
+}
+.abilities-container img {
+    padding: 3% 10%;
+}
+ul {
+    font-weight: bold;
+    padding: 1rem 1rem;
+    line-height: 2rem;
+}
+ul > li {
+    font-weight: lighter;
+    line-height: 2.5rem;
+    list-style: none;
+}
+.exception {
+    padding-top: 0 !important;
+    padding-right: 10%;
+}
+.it-abilities {
+    border-radius: 2%;
+    display: flex;
+    margin-left: 2%;
+}
+.ability td p {
+    margin-right: 5%;
+}
+.confirmation {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hover:hover {
+    color: #8B1874;
+}
+.hobbies {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 5%;
+}
+.hobbies > div > p {
+    margin-right: 15%;
+}
+.hi {
+    margin-right: 1rem;;
+}
+footer h3 {
+    margin-bottom: 0;
+}
+button {
+    display: block;
+    margin: 2% auto;
+    background-color: #394867;
+    border: none;
+    border-radius: 12px;
+    color: #F1F6F9;
+    font-size: 2rem;
+    padding: 15px 15px;
+    text-align: center;
+}
+button:hover {
+    background-color: #8d4a7f;
+    
+}
+a {
+    text-decoration: none;
+}
+.social-media { 
+    margin-top: 1%;
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    font-size: 2rem;
+}
+.social-media > a:hover {
+    color: #8B1874;
+}
+
+@media (max-width: 860px) {
+
+    .container-title {
+        flex-direction: column;
+        align-items: center;  
+    }
+
+    #avatar > img {
+        width: 320px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    #me {
+        margin-right: 0;
+        text-align: center;
+    } 
+    
+    .abilities-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work{
+        flex-direction: column;
+        align-items: center;
+        min-width: 400px;
+    }
+
+    .header{
+        margin: 0 15%;
+    }
+
+    .content{
+        text-align: center !important;
+        margin-top: 0 !important;
+    }
+
+    .it-abilities {
+        background-color: #F1F6F9;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2rem;  
+        padding: 0 1rem;  
+    }
+    .hi {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 1000px) {
+    .hobbies {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+}
+@media (max-width: 1200px) {
+    body {
+        margin: 0 auto;
+    }
+    .abilities-container {
+        flex-wrap: wrap;
+        align-content: center;
+        min-width: 100%;
+        margin-left: auto;
+    }
+    .work{
+        display: flex;
+        gap: 1rem;
+        justify-content: space-around;
+    }
+    .content {
+        margin-top: 2.5rem;
+        margin-right: 1rem;
+        text-align: left;
+    }
+    .header{
+        margin-left: 1rem;
+    }
+}
